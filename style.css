@@ -1,0 +1,31 @@
+body{
+    background-image: linear-gradient(to left top, #0fe118, #00e771, #00eaa8, #00ead1, #00e8eb, #00ddf6, #00d0fd, #00c2ff, #00a6ff, #0086ff, #005fff, #0016ff);
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    color: white;
+}
+#heading{
+    background-image: linear-gradient(to left top, #b541cd, #c53aca, #d333c5, #e229c0, #ef1dba, #f70da9, #fc0099, #ff0089, #fd006d, #f70051, #ed0036, #e01818);
+    color:white;
+    font-size: 30px;
+    width: 80%;
+    letter-spacing: 5px;
+}
+.object_list{
+    color: #ff0089;
+    font-size: 20px;
+    
+}
+#camera,#snapshot{
+  width: 300px;
+  height: 300px;
+  border:3px ridge grey;
+}
+button{
+    background-color:yellowgreen;
+    color: white;
+    margin: 20px;
+    letter-spacing: 5px;
+}
+#object_result,#accuracy_result{
+    color: greenyellow;
+}

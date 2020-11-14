@@ -1,0 +1,58 @@
+ 
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display&display=swap" rel="stylesheet">
+    <title>Recognize Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+      <h3 class="btn" id="heading">Recognize Me</h3>
+      <br>
+      <br>
+
+      <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
+      <b class="object_list">
+      Pencil<hr>
+      Glass<hr>  
+      Box<hr>  
+      Mouse<hr>  
+      Telephone<hr>  
+      Vyom<hr>  
+      Keyboard
+      </b>
+      <br>
+      <br>
+      <label style="letter-spacing: 5px; font-size: 20px;">Webcam View - </label>
+      <div id="camera"></div>
+      <br><br>
+      <div id="snapshot"></div>
+      <br><br>
+      <button onclick="capture()">Capture Image</button>
+      <br><br>
+      <button onclick="identify()">Identify</button>
+      <br><br>
+      
+      <p style="font-size: 22px;">Object : <span id="object_result"></span> </p>
+      <p style="font-size: 22px;">Accuracy : <span id="accuracy_result"></span> </p>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
