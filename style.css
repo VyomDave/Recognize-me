@@ -27,5 +27,6 @@ button{
     letter-spacing: 5px;
 }
 #object_result,#accuracy_result{
-    color: greenyellow;
+    color: #fd006d;
+    font-weight: bold;
 }

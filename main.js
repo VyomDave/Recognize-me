@@ -21,3 +21,21 @@ function modelloaded(){
     console.log("model has been loaded")
     
 }
+
+function identify(){
+     image = document.getElementById("output");
+     classifier.classify(image,output);
+}
+
+function output(error,results){
+     if(error){
+         console.log(error)
+     }
+     else{
+         console.log(results);
+         object_name = results[0].label;
+         confidence = results[0].confidence.toFixed(3)*100;
+         document.getElementById("object_result").innerHTML=object_name;
+         document.getElementById("accuracy_result").innerHTML=confidence+"%";
+    }
+}
